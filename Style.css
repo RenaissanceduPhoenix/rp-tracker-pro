@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('darkv3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.7); /* Fond sombre transparent */
+    border: 2px solid #555;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1; /* Toutes les boîtes prennent la même largeur par défaut */
+}
+
+/* Ajustements spécifiques selon ton dessin */
+.zone-ajout-pending { flex: 1.5; }
+.zone-vue-pending { 
+    flex: 1.5; 
+    background: white !important; /* Fond BLANC pour la lecture */
+    color: black !important;      /* Texte NOIR */
+    min-height: 300px;
+}
+
+/* Zone Graphique */
+.canvas-container {
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Formulaires */
+input, textarea {
+    width: 90%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Modal au milieu (comme demandé) */
+#modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#modalContent {
+    background: white !important;
+    color: black !important;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%;
+}
